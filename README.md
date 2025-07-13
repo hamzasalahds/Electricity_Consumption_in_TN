@@ -2,7 +2,7 @@
 ## Overview
 This project applies predictive analytics techniques to forecast residential electricity consumption in Tennessee from 2010 to 2024. Leveraging historical temperature and electricity pricing data, the analysis provides insights into sector-specific consumption trends and delivers actionable recommendations for utility providers and policymakers.
 
-[Energy Consumption PDF](https://github.com/hamzasalahds/Electricity_Consumption_in_TN/blob/main/Energy_Consumption.pdf)
+[Energy Consumption PDF](https://github.com/hamzasalahds/Electricity_Consumption_in_TN/blob/main/Energy%20Consumption.pdf)
 
 ## Objectives
 Forecast residential energy demand using ARIMA and multiple linear regression models.
