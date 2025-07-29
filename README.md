@@ -8,7 +8,7 @@ This project applies predictive analytics techniques to forecast electricity con
 
 ## Objectives
 
-- Forecast energy demand using ARIMA and multiple linear regression models
+- Forecast energy demand using ARIMA, SARIMAX, and multiple linear regression models
 
 - Analyze the impact of temperature and electricity prices on consumption patterns
 
@@ -44,7 +44,7 @@ This project applies predictive analytics techniques to forecast electricity con
 
 ## Results Summary
 
-- The ARIMA model performed well during stable weather periods but underpredicted usage during extreme months like January and July across all sectors
+- The SARIMAX model performed well during stable weather periods but underpredicted usage during extreme months like January and July across all sectors
 
 - Residential sector: Low error in February and April (<3%), but significant underpredictions during seasonal peaks (up to 11.7%)
 
@@ -54,7 +54,6 @@ This project applies predictive analytics techniques to forecast electricity con
 
 - Combined sector: Smoothed variations with errors as low as 1.21% in February, but still challenged by seasonal extremes
 
-- Model achieved an RMSE of ~291,000 kWh for residential forecasts
 
 ## Recommendations
 
