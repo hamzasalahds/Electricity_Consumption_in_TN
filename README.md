@@ -26,7 +26,7 @@ This project applies predictive analytics techniques to forecast electricity con
 
 - Time Series Modeling: statsmodels, pmdarima
 
-- Evaluation Metrics: RMSE, MAE, MAPE
+- Evaluation Metrics: RMSE, MAE, MAPE, RMSPE
 
 - Visualization & Diagnostics: Time Series Plots, Heatmaps, Residual Analysis
 
@@ -44,21 +44,22 @@ This project applies predictive analytics techniques to forecast electricity con
 
 ## Results Summary
 
-- The SARIMAX model performed well during stable weather periods but underpredicted usage during extreme months like January and July across all sectors
+- SARIMAX model achieved overall strong forecast accuracy, with relative RMSE around 4.0% for the Combined sector and as low as 3.0% for Commercial consumption
 
-- Residential sector: Low error in February and April (<3%), but significant underpredictions during seasonal peaks (up to 11.7%)
+- Residential forecasts exhibited higher relative RMSE (~7.6%), indicating greater variability and modeling challenges in this sector
 
-- Commercial sector: Similar trends, with notable underpredictions in summer months (July and August)
+- Industrial sector forecasts showed moderate accuracy with relative RMSE near 4.8%
 
-- Industrial sector: Highest fluctuations in summer; best accuracy in February and November
+- Seasonal extremes (e.g., January and July) remain challenging across all sectors, causing underpredictions during peak demand months
 
-- Combined sector: Smoothed variations with errors as low as 1.21% in February, but still challenged by seasonal extremes
-
+- RMSPE analysis confirms SARIMAX forecasts maintain percentage errors mostly under 4%, highlighting reliable relative performance despite occasional spikes
 
 ## Recommendations
 
-- Incorporate seasonality-aware models or external regressors to improve peak demand forecasting
+- Enhance modeling by incorporating seasonality-aware methods and additional external regressors to better capture peak demand fluctuations
 
-- Introduce peak-hour alerts and targeted energy efficiency incentives during high-consumption months
+- Focus on improving the Residential sector forecasting through refined data collection and modeling techniques to reduce higher relative errors
 
-- Enhance data collection on weather and occupancy patterns for better accuracy
+- Develop targeted demand response and energy efficiency strategies during identified seasonal peaks to mitigate forecast shortfalls
+
+- Continue monitoring and refining models using RMSPE and relative RMSE metrics for balanced absolute and percentage error insights
